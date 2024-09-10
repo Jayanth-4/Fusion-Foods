@@ -1,0 +1,552 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    line-height: 1.5rem;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100dvw;
+    height: 100dvh;
+}
+
+/*-----------------------------------------------------WELCOME_PAGE------------------------------------------------------*/
+
+.welcome-page {
+    background-image: url("images/welcomebackgroundimage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: fadein 2s ease-in;
+}
+
+.logo {
+    width: 125px;
+    max-width: 125px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+.welcomepage h1 {
+    font-size: 10rem;
+    max-font-size: 10rem;
+    letter-spacing: 0.04em;
+    padding: 0.5em;
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 500;
+    color: #dbdbdb;
+    text-shadow: 2px 2px 5px black;
+}
+
+.welcomepage p {
+    color: #fefefe;
+    font-size: 1.3rem;
+    max-font-size: 1.3rem;
+    letter-spacing: 0.8em;
+    word-spacing: 0.2em;
+    display:inline-block; 
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 4s steps(10) 1;   
+}
+
+.buttons {
+    padding: 1em 0 9em 0;
+}
+
+.buttons button {
+    font-size: 1.1rem;
+    padding: 0.7em 1.5em;
+    margin: 2em 1.5em;
+    background-color: transparent;
+    backdrop-filter: blur(25px);
+    color: white;
+    border: 1px solid #D7D7D7;
+    box-shadow: 1px 1px 5px #D7D7D7;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    color: black;
+	background:white;
+	border:1px solid black;
+	box-shadow: 1px 1px 5px black;
+}
+
+.buttons a {
+    font-size: 0.9rem;
+    cursor: pointer;
+    color: #D7D7D7;
+    margin-left: 1em;
+    letter-spacing: 0.05em;
+}
+
+.buttons a:hover {
+    text-decoration: underline;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*--------- Responsive Styles ----------*/
+
+@media (max-width: 1250px) {
+	.welcomepage h1{
+		font-size:9rem ;
+	}
+  
+    .welcomepage p {
+        
+        font-size: 1.1rem;
+    }
+     
+    .buttons button{
+       font-size: 1rem;
+    }
+    
+       
+}
+
+@media (max-width: 1150px) {
+    .welcomepage h1 {
+        font-size: 8.5rem;
+    }
+
+    .welcomepage p {
+        font-size: 1rem;
+    }
+
+    .buttons button{     
+        font-size: 0.9rem
+    }  
+}
+
+@media (max-width: 1050px) {
+    .welcomepage h1 {
+        font-size: 7rem;
+    }
+    
+    .buttons a{
+    	font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 870px) {
+    .welcomepage h1 {
+        font-size: 6rem;
+    }
+    
+    .buttons button{     
+        font-size: 0.8rem
+    }
+    
+    .logo{
+      width: 120px;
+    }
+}
+
+@media (max-width: 750px) {
+    .welcomepage h1 {
+        font-size: 5rem;
+    }
+    
+     .welcomepage p {
+        font-size: 0.8rem;
+    }
+    .buttons button{      
+        font-size: 0.8rem
+    }
+    
+    .logo{
+      width: 115px;
+    }
+    
+    .buttons a{
+    	font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 630px) {
+    .welcomepage h1 {
+        font-size: 4rem;
+    }
+    
+    .welcomepage p {
+        font-size: 0.7rem;
+        letter-spacing: 0.6em;
+    	word-spacing: 0.1em;
+    }
+    .buttons button{     
+        font-size: 0.7rem;
+         padding: 0.6em 1.5em;
+    }
+    .logo{
+      width: 110px;
+    }
+}
+
+/*-----------------------------------------------------SIGNIN_PAGE---------------------------------------------------*/
+
+.signin-page{
+	width:100dvw;
+	height: 100dvh;
+	background-image: url("images/signin-signup-background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.signin-box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:100dvw;
+	height:100vh;
+	background-color: transparent;
+	backdrop-filter:blur(10px);
+}
+.signin{
+	width:24vw;
+	border-radius:1.5em;
+	padding:3em 2em;	
+	border:0.5px solid #6c6c6c;
+	box-shadow: 1px 1px 10px black;	
+}
+
+.signin-form input{	
+	width: 100%;
+	margin-bottom: 1em;
+	padding:0.5em;
+	border:1px solid #D7D7D7;
+	border-radius: 0.5em;
+	outline: none;	
+	background-color:transparent;
+	box-shadow: 0px 1px 10px black;
+	animation:slidee 1.2s ease-out;
+	color:white;	
+}
+
+.signin-form input::placeholder{
+	color: #a4a4a4;
+	letter-spacing: 0.1em;
+}
+
+.signin-form{			
+	text-align: right;	
+}
+
+@keyframes slidee{
+	from{
+	transform: translateY(-150%);
+	opacity: 0;
+	}
+	to{
+	transform: translateX(0);
+	opacity: 1;
+	}
+}
+
+.signin h1{
+	color:white;
+	letter-spacing:0.1em;
+	text-align: center;
+	padding-bottom: 1em;	
+	text-shadow: 3px 3px 1px black;	
+}
+
+.signin-form label{		
+	color:white;
+	font-size:1rem;
+	letter-spacing:0.06em;
+	padding: 0.4em 0em 0.2em 0.5em;
+	display:flex;
+	align-items: flex-start;
+}
+
+.signin-form button{	
+	margin: 1.5em 0em 0.5em 0em;
+	font-size: 1rem;
+	padding:0.5em 1.2em;
+	border-radius: 0.4em;
+	background:black;
+	color: white;
+	border:0.2px solid #838383;
+	box-shadow: 0.5px 0.5px 4px #D7D7D7;		
+}
+
+.signin-form button:hover{	
+	color: black;
+	background:white;
+	border:1px solid black;
+	box-shadow: 1px 1px 5px black;	
+}
+
+.signin a{	
+	color: #D7D7D7;
+}
+.signin a:hover{	
+	text-decoration: underline;
+}
+
+/*--------- Responsive Styles ----------*/
+
+@media (max-width: 1300px) {
+	
+    .signin{
+        width: 29vw; 
+    }
+}
+@media (max-width: 1150px) {
+	
+    .signin{
+        width: 34vw; 
+    }
+}
+@media (max-width: 950px) {
+	
+    .signin{
+        width: 40vw; 
+    }
+}
+@media (max-width: 750px) {
+	
+    .signin{
+        width: 50vw; 
+    }
+}
+@media (max-width: 550px) {
+	
+    .signin{
+        width: 70vw; 
+    }
+}
+@media (max-width: 400px) {
+	
+    .signin{
+        width: 75vw; 
+    }
+}
+
+/*--------------------------------------------------SIGNUP_PAGE--------------------------------------------*/
+
+.signup-page {
+    height: 100vh;
+    background-image: url("images/signin-signup-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.signup-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+}
+
+.signup {
+    width: 35vw;
+    border-radius: 1.5em;
+    padding: 3em 2.5em;
+    border:0.5px solid #6c6c6c;
+	box-shadow: 1px 1px 10px black;
+}
+
+.signup h1 {
+    color:white;
+	letter-spacing:0.1em;
+	text-align: center;
+	padding:0.5em;	
+	text-shadow: 3px 3px 1px black;	
+}
+.signup-form {
+    text-align: right;
+}
+
+.signup-info {
+	
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.signup-form span {
+	height:2.5em;
+    color: red;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.signup-info label {
+	color:white;
+    font-size: 0.9rem;
+    letter-spacing: 0.06em;
+}
+
+.signup-info input {
+    width: 55%;
+	padding:0.5em;
+	border:1px solid #a5a5a5;
+	border-radius: 0.3em;
+	outline: none;	
+	background:transparent;
+	box-shadow: 0px 1px 10px black;
+	animation:slidee 1.2s ease-out;
+	color:white;
+}
+
+.signup-form input::placeholder{
+	color: #a4a4a4;
+	letter-spacing: 0.1em;
+}
+
+.signup-form button{	
+	margin: 1.5em 0em 0.5em 0em;
+	font-size: 1rem;
+	padding:0.5em 1.2em;
+	border-radius: 0.4em;
+	background:black;
+	color: white;
+	border:0.2px solid #838383;
+	box-shadow: 0.5px 0.5px 4px #D7D7D7;		
+}
+
+.signup-form button:hover{	
+	color: black;
+	background:white;
+	border:1px solid black;
+	box-shadow: 1px 1px 5px black;	
+}
+.signup a {
+    color: #D7D7D7;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+/*--------- Responsive Styles ----------*/
+
+@media (max-width: 1300px) {
+    .signup {
+        width: 43vw; 
+        
+    }
+}
+@media (max-width: 1100px) {
+    .signup {
+        width: 48vw; 
+        
+    }
+}
+@media (max-width: 980px) {
+    .signup {
+        width: 55vw; 
+        
+    }
+}
+@media (max-width: 820px) {
+    .signup {
+        width: 65vw; 
+        
+    }
+}
+@media (max-width: 680px) {
+    .signup {
+        width: 92vw; 
+        
+    }
+}
+@media (max-width: 400px) {
+    .signup {
+        width: 100vw; 
+        
+    }
+}
+
+
+/*---------------------------------------------------------------**********-----------------------------------------------------------*/
+
+.home-page {	
+    height: 100vh;
+    padding-top: 5em;
+    background-color: #D7D7D7;
+}
+
+.navbar {
+    height: 5rem;
+  	background-image: url("images/main-backgroun.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    border-bottom: none;
+    box-shadow: 0px 1px 20px #696969;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.nav-content {
+	border:2px solid red;
+	width:95vw;
+	margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-content img {
+	border:2px solid red;
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.nav-content a{
+	border:2px solid red;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color:#D7D7D7;
+}
+
+.nav-content a svg{
+	
+	fill:#D7D7D7;
+	width:30px;
+	height:30px;
+	margin-right: 0.5em;
+	
+		
+}
