@@ -71,3 +71,7 @@ Future Improvements:-
 * Payment Gateway: Integrate with a secure payment gateway like Stripe or PayPal.
 * Admin Panel: Add an admin interface for managing restaurants and menus.
 * Search & Filters: Improve restaurant and menu filtering options.
+
+Contact:-
+----------
+For any questions or feedback, feel free to reach out at jayanthmourya27@gmail.com.
